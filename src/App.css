@@ -1,38 +1,375 @@
-.App {
-  text-align: center;
+a{
+    color: rgb(70, 68, 68);
+}
+/* General Styling*/
+
+body {
+    font-family: 'Montserrat', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a {
+    color: #06c;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+img {
+    max-width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.white {
+    color: #fff;
 }
 
-.App-link {
-  color: #61dafb;
+.black {
+    color: #1d1d1f;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.grey {
+    color: #86868b;
+}
+
+.top-50 {
+    margin-top: 50px;
+}
+i{
+    color: grey;
+}
+
+/* Header Style */
+
+.nav-wrapper {
+    background: rgba(0, 0, 0, 0.8);
+    font-size: 0.85em;
+    font-weight: 200;
+}
+
+.nav-wrapper ul li a {
+    color: #fff;
+}
+
+.navbar-toggler {
+    color: #fff;
+}
+
+.nav-item {
+    text-align: left !important;
+    padding: 4px 0;
+    border-bottom: 1px solid #4b4b4b;
+}
+
+
+/* Footer Styling */
+
+.footer-wrapper {
+    background-color: #f5f5f7;
+    color: #86868b;
+    font-size: .7em;
+}
+
+.footer-wrapper ul {
+    list-style: none;
+    padding-bottom: 10px;
+    padding-inline-start: 0px;
+}
+
+.footer-wrapper ul a {
+    color: #515154;
+}
+
+.my-apple-wrapper {
+    padding-bottom: 15px;
+    margin-top: 10px;
+}
+
+.copyright {
+    margin-top: 15px;
+}
+
+.footer-country {
+    margin-top: 8px;
+}
+
+footer-country {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flag-wrapper {
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 5px;
+}
+
+.footer-country-name {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.footer-links-terms ul {
+    display: flex;
+}
+
+.footer-links-terms ul li {
+    padding: 0 10px;
+    border-right: 1px solid #d2d2d7;
+}
+
+.footer-links-terms ul li:first-child {
+    padding-left: 0;
+}
+
+.footer-links-terms ul li:last-child {
+    border-right: 0;
+}
+
+.footer-links-wrapper h3 {
+    font-size: 12px;
+    font-weight: 600;
+    color: #1d1d1f;
+}
+
+.footer-wrapper ul li {
+    padding: 4px 0;
+}
+
+.upper-text-container {
+    border-bottom: 1px solid #d2d2d7;
+    padding: 17px 0 10px;
+    margin-bottom: 20px;
+}
+
+.upper-text-container a {
+    color: #515154;
+}
+
+
+/* Footer responsive */
+
+@media (max-width: 768px) {
+    .footer-links-wrapper ul {
+        display: none;
+    }
+    .footer-links-wrapper h3 {
+        padding: 10px 0;
+        border-bottom: 1px solid #ccc;
+    }
+    .footer-links-wrapper h3:after {
+        font-family: "FontAwesome";
+        content: "\f067";
+        padding-left: 10px;
+        position: absolute;
+        right: 25px;
+    }
+    .footer-links-wrapper h3.expanded:after {
+        font-family: "FontAwesome";
+        content: "\f107";
+        padding-left: 10px;
+        position: absolute;
+        right: 25px;
+    }
+}
+
+
+/* Search Box */
+
+.searchbox {
+    z-index: 100;
+    background: #000;
+    padding: 100px;
+    text-align: center;
+    display: none;
+}
+
+.searchbox ul {
+    background: #fff;
+}
+
+
+/*Sixth Section*/
+
+
+
+
+
+
+
+
+.links-wrapper {
+    padding: 15px 0;
+}
+
+.links-wrapper ul li {
+    display: inline-block;
+    padding-right: 20px;
+}
+
+.links-wrapper ul li a {
+    color: #06c;
+    text-decoration: none;
+    font-size: 21px;
+}
+
+.links-wrapper ul li a:hover {
+    color: #000;
+}
+
+
+
+.title-wraper.bold {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.15em;
+    letter-spacing: -0.04em;
+}
+
+
+
+
+
+/*Third section*/
+
+.third-hightlight-wrapper {
+    background-image: url("./images/home/thirdd.jpg");
+    height: 580px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    text-align: center;
+    padding: 65px 20px;
+    color: #fff;
+}
+
+
+/*Second section*/
+
+.second-hightlight-wrapper {
+    background-image: url("./images/home/second.jpg");
+    height: 580px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: initial;
+    background-color: #fbfbfd;
+    text-align: center;
+    padding: 65px 20px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+
+/*First Section*/
+
+.first-hightlight-wrapper {
+    background-image: url("./images/home/first.jpg");
+    height: 580px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: initial;
+    background-color: #fbfbfd;
+    text-align: center;
+    padding: 65px 20px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.ipod-caption {
+    color: #86868b;
+    font-size: 12px;
+    line-height: 1.33337;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    padding-top: 310px;
+}
+
+
+/* Alert section */
+
+.alert-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.alert-title {
+    font-weight: 600;
+    color: #1d1d1f;
+    padding: 10px;
+    
+}
+
+.alert-text {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+
+/*Media Query*/
+
+
+/* Footer */
+
+@media (max-width: 768px) {
+    .footer-links-wrapper ul {
+        display: none;
+    }
+    .footer-links-wrapper h3 {
+        padding: 10px 0;
+        border-bottom: 1px solid #ccc;
+    }
+    .footer-links-wrapper h3:after {
+        font-family: "FontAwesome";
+        content: "\f067";
+        padding-left: 10px;
+        position: absolute;
+        right: 25px;
+    }
+}
+
+@media (min-width: 768px) {
+    /*Nav bar*/
+    .nav-item {
+        text-align: center !important;
+        padding: 0;
+        border-bottom: 0px;
+    }
+    /*Footer styling*/
+    .my-apple-wrapper {
+        border-bottom: 1px solid #d2d2d7
+    }
+   
+    .title-wraper.bold {
+        font-size: 56px;
+    }
+    /* Second section */
+    .second-hightlight-wrapper {
+        min-height: 692px;
+        background-image: url("./images/home/secondd.jpg");
+    }
+    .new-alert {
+        color: #BF4801;
+        font-size: 18px;
+    }
+    /* First section */
+    .first-hightlight-wrapper {
+        background-image: url("./images/home/firstt.jpg");
+        min-height:672px;
+    }
+    .ipod-caption {
+        padding-top: 415px;
+    }
+    /*Alert section*/
+    .alert-text {
+        max-width: 85%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 992px) {
+    /*Footer styling*/
+    .copyright {
+        margin-top: 10px;
+    }
+    .footer-country {
+        margin-top: 10px;
+    }
+    .footer-links-terms {
+        margin-top: 10px;
+    }
 }
